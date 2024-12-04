@@ -213,23 +213,3 @@ function codeprompt(){
 document.getElementById("loadscreen").addEventListener('animationend', () => {
     document.getElementById("loadscreen").style.display = 'none';
 })
-
-function autosave(){
-    let clicksave = localStorage.setItem("clicksave", clicks.value)
-    let coinsave = localStorage.setItem("coinsave", coins.value)
-    let bogdansave = localStorage.setItem("bogdansave", bogdanBuy.value)
-    let antonsave = localStorage.setItem("antonsave", antonBuy.value)
-    let codenoesave = localStorage.setItem("codenoesave", codenoe.value)
-    let langsave = localStorage.setItem("langsave", document.getElementById("languagetoggle").textContent.value)
-}
-
-window.onload = () => {
-    document.getElementsByClassName("coins")[0].innerHTML = localStorage.getItem("coinsave")
-    document.getElementsByClassName("clicksave")[0].innerHTML = localStorage.getItem("clicksave")
-    bogdanBuy = localStorage.getItem("bogdansave")
-    antonBuy = localStorage.getItem("antonsave")
-    codenoe = localStorage.getItem("codenoesave")
-    document.getElementById("languagetoggle").textContent = localStorage.getItem("langsave")
-}
-
-setInterval(autosave, 1000)
