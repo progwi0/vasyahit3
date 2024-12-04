@@ -110,5 +110,5 @@ cursor: pointer;
     position: absolute;
     animation: 5s ease forwards load;
     animation-delay: 30s;
-    backdrop-filter: brightness(50%)
+    backdrop-filter: brightness(50%) blur(50%);
 }
