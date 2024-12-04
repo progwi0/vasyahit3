@@ -23,6 +23,9 @@
         transform: rotate(360deg);
     }
 }
+* {
+  -webkit-tap-highlight-color: transparent;
+}
 html{
     overflow: hidden;
 }
