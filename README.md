@@ -1,5 +1,11 @@
-Vasya on your Linux and Android!
+Vasya on your Windows and Android!
 
-(you need pywebview for run on Linux...)
-
-You need WSL to play on Windows.
+You need to install pywebview to run.
+That's how to install it:
+```python 
+pip install pywebview
+```
+or
+```python
+python -m pip install pywebview
+```
