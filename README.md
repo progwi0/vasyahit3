@@ -2,10 +2,10 @@ Vasya on your Windows and Android!
 
 You need to install pywebview to run.
 That's how to install it:
-```sh 
+```bash 
 pip install pywebview
 ```
 or
-```sh
+```bash
 python -m pip install pywebview
 ```
