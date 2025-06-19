@@ -62,15 +62,15 @@ function equipVasya(){
 
 function equipBogdan(){
     if(bogdanBuy == false){
-        if(coins <= 1000){
+        if(coins <= 500){
             alert("no enough vasyacoins go away nooby!!!!1!!")
-        } else if(coins == 1000){
+        } else if(coins == 500){
             alert("yeeee new character bogdan!!1!!")
             coins -= 1000
             document.getElementsByClassName("coins")[0].innerHTML = coins
             bogdanBuy = true
             character = "bogdan"
-        } else if(coins >= 1000){
+        } else if(coins >= 500){
             alert("yeeee new character bogdan!!1!!")
             coins -= 1000
             document.getElementsByClassName("coins")[0].innerHTML = coins
@@ -146,6 +146,20 @@ function languagechange(){
         document.getElementById("antb").textContent = "Антон. "
         document.getElementById("avts").textContent = "Аватари"
     } else if(document.getElementById("languagetoggle").textContent == "ua"){
+        document.getElementById("languagetoggle").textContent = "bel"
+        document.getElementById("clcks").textContent = "Клікi: "
+        document.getElementById("vscons").textContent = "ВасіныяМанеты: "
+        document.getElementById("settgs").textContent = "Налады"
+        document.getElementById("annoy").textContent = "Дасадны рэжым: "
+        document.getElementById("mutechang").textContent = "Ціхі гук:  "
+        document.getElementById("lang").textContent = "Мова: "
+        document.getElementById("rst").textContent = "Скідаць дадзеныя."
+        document.getElementById("shps").textContent = "Крама Васі"
+        document.getElementById("vsyab").textContent = "Вася. "
+        document.getElementById("bogdb").textContent = "Богдан. "
+        document.getElementById("antb").textContent = "Антон. "
+        document.getElementById("avts").textContent = "Аватары"
+    } else if(document.getElementById("languagetoggle").textContent == "bel"){
         document.getElementById("languagetoggle").textContent = "en"
         document.getElementById("clcks").textContent = "Clicks: "
         document.getElementById("vscons").textContent = "VasyaCoins: "
@@ -207,3 +221,4 @@ function codeprompt(){
 document.getElementById("loadscreen").addEventListener('animationend', () => {
     document.getElementById("loadscreen").style.display = 'none';
 })
+
